@@ -22,7 +22,7 @@ const App = () => {
   };
 
   return (
-    <div className="container flex flex-col mx-auto px-4 place-items-center bg-black">
+    <div className="container flex flex-col mx-auto px-4 place-items-center bg-black h-screen text-white">
       <SearchBar onSearch={handleSearch} />
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}

@@ -11,7 +11,6 @@ const SearchBar = ({ onSearch }) => {
         return;
       }
       onSearch(query);
-      setQuery('');
       setError('');
     };
   
@@ -23,7 +22,7 @@ const SearchBar = ({ onSearch }) => {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search for a movie..."
-        className="px-4 py-2 border rounded-l-lg focus:outline-none"
+        className="px-4 py-2 border rounded-l-lg focus:outline-none text-black"
       />
       <button
         type="submit"
